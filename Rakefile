@@ -52,6 +52,7 @@ task :uninstall do
     # Replace any backups made during installation
     if File.exists?("#{ENV["HOME"]}/.dotfile_backups/.#{file}.backup")
       `mv "$HOME/.dotfile_backups/.#{file}.backup" "$HOME/.#{file}"` 
+      `rm -rf $HOME/.dotfile_backups`
     end
 
   end
