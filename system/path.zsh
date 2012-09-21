@@ -10,7 +10,7 @@ export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 export NODEPATH="/usr/local/lib/node_modules:$NODEPATH"
 
 # Add Android Tools paths
-export PATH="~/android-sdks/tools:~/android-sdks/platform-tools:$PATH"
+export PATH="/Users/aecorre/android-sdks/tools:/Users/aecorre/android-sdks/platform-tools:$PATH"
 
 # Add linkedin commands
 export PATH="$PATH:/usr/local/linkedin/bin"
