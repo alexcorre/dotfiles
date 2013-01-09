@@ -14,3 +14,6 @@ export PATH="/Users/aecorre/android-sdks/tools:/Users/aecorre/android-sdks/platf
 
 # Add linkedin commands
 export PATH="$PATH:/usr/local/linkedin/bin"
+
+# Add npm bin
+export PATH="$PATH:/usr/local/share/npm/bin"
