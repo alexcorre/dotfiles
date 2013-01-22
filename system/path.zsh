@@ -17,3 +17,6 @@ export PATH="$PATH:/usr/local/linkedin/bin"
 
 # Add npm bin
 export PATH="$PATH:/usr/local/share/npm/bin"
+
+# Add nvm bin to path
+source ~/.nvm/nvm.sh
