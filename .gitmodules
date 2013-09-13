@@ -1,0 +1,3 @@
+[submodule "nvm/nvm.symlink"]
+	path = nvm/nvm.symlink
+	url = git@github.com:creationix/nvm.git
