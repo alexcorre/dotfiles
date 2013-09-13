@@ -1,3 +1,6 @@
 [submodule "nvm/nvm.symlink"]
 	path = nvm/nvm.symlink
 	url = git@github.com:creationix/nvm.git
+[submodule "rbenv/rbenv.symlink"]
+	path = rbenv/rbenv.symlink
+	url = git@github.com:sstephenson/rbenv.git
