@@ -2,6 +2,7 @@ require 'rake'
 
 desc "Hook our dotfiles into system-standard positions."
 task :install do
+  # symlink all .symlink files from section folders to root
   linkables = Dir.glob('*/**{.symlink}')
 
   skip_all = false
@@ -35,6 +36,18 @@ task :install do
     end
     `ln -s "$PWD/#{linkable}" "#{target}"`
   end
+
+  # print instructions for user to run setup files
+  setups = Dir.glob('*/setup')
+  
+  unless setups.empty?
+    puts ""
+    puts "I see you have some setup files that need to be run. Be sure to read them and run them as desired:"
+  end
+
+  setups.each do |setup|
+    puts setup
+  end  
 end
 
 task :uninstall do
