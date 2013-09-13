@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Clone ruby-build rbenv plugin
+git clone git@github.com:sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
