@@ -20,3 +20,6 @@ export PATH="$PATH:/usr/local/linkedin/bin"
 
 # Add npm bin
 export PATH="$PATH:/usr/local/share/npm/bin"
+
+# Add rbenv to path
+export PATH="$HOME/.rbenv/bin:$PATH"
