@@ -2,6 +2,9 @@
 	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
+		"DocBlockr",
+		"Git",
+		"GitGutter",
 		"Package Control",
 		"SCSS",
 		"Theme - Soda"
