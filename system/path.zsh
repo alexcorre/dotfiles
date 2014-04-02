@@ -15,8 +15,5 @@ export NODEPATH="/usr/local/lib/node_modules:$NODEPATH"
 # Add Android Tools paths
 export PATH="$PATH:/Users/aecorre/android-sdks/tools:/Users/aecorre/android-sdks/platform-tools"
 
-# Add linkedin commands
-export PATH="$PATH:/usr/local/linkedin/bin"
-
 # Add npm bin
 export PATH="$PATH:/usr/local/share/npm/bin"
