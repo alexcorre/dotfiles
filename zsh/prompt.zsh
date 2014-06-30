@@ -79,7 +79,7 @@ host_name () {
 	echo "%{$fg_bold[black]%}(%n@%m):%{$reset_color%}"
 }
 
-export PROMPT=$'\n$(host_name)$(directory_name) $(git_dirty)$(need_push)\n> '
+export PROMPT=$'\n$(host_name)$(directory_name) $(git_dirty)$(need_push)\n$ '
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}$(todo)%{$reset_color%}"
 }
