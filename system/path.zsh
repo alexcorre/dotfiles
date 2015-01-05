@@ -12,8 +12,5 @@ export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 # Add NPM packages to node path
 export NODEPATH="/usr/local/lib/node_modules:$NODEPATH"
 
-# Add Android Tools paths
-export PATH="$PATH:/Users/aecorre/android-sdks/tools:/Users/aecorre/android-sdks/platform-tools"
-
 # Add npm bin
 export PATH="$PATH:/usr/local/share/npm/bin"
