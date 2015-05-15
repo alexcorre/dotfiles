@@ -10,20 +10,12 @@ git_branch() {
 }
 
 git_dirty() {
-  st=$($GIT status 2>/dev/null | tail -n 1)
+  st=$($GIT status --porcelain 2>/dev/null)
   if [[ $st == "" ]]
   then
-    echo ""
+    echo "[%{$fg_bold[green]%}$(git_prompt_info)%{$reset_color%}]"
   else
-    if [[ $st == "nothing to commit, working directory clean" ]]
-    then
-      echo "[%{$fg_bold[green]%}$(git_prompt_info)%{$reset_color%}]"
-    elif [[ $st == "nothing to commit (working directory clean)" ]]
-    then
-      echo "[%{$fg_bold[green]%}$(git_prompt_info)%{$reset_color%}]"
-    else
-      echo "[%{$fg_bold[red]%}$(git_prompt_info)%{$reset_color%}]"
-    fi
+    echo "[%{$fg_bold[red]%}$(git_prompt_info)%{$reset_color%}]"
   fi
 }
 
