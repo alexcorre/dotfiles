@@ -56,6 +56,7 @@ host_name () {
 }
 
 export PROMPT=$'\n$(host_name)$(directory_name) $(git_dirty)$(need_push)\n$ '
+export PROMPT_EOL_MARK=""
 
 precmd() {
   title "zsh" "%m" "%55<...<%~"
