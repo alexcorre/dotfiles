@@ -7,6 +7,10 @@ export PATH="./bin:$HOME/.rbenv/shims:/usr/local/bin:/usr/local/sbin:$HOME/.sfs:
 export PATH="$PATH:/usr/local/bin:$HOME/Developer/devtools/utilities"
 export PATH="$PATH:/opt/local/bin:/opt/local/sbin"
 
+# Android
+export PATH="$PATH:/Users/alexcorre/Library/Android/sdk/tools"
+export PATH="$PATH:/Users/alexcorre/Library/Android/sdk/platform-tools"
+
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 
 # Add NPM packages to node path
