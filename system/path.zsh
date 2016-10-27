@@ -20,5 +20,5 @@ export NODEPATH="/usr/local/lib/node_modules:$NODEPATH"
 export PATH="$PATH:/usr/local/share/npm/bin"
 
 # Add gcloud
-source /Users/alexcorre/google-cloud-sdk/completion.zsh.inc
-source /Users/alexcorre/google-cloud-sdk/path.zsh.inc
+source $HOME/google-cloud-sdk/completion.zsh.inc
+source $HOME/google-cloud-sdk/path.zsh.inc
