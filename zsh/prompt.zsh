@@ -55,9 +55,9 @@ host_name () {
 	echo "%{$fg_bold[black]%}(%n@%m):%{$reset_color%}"
 }
 
-export PROMPT=$'\n$(host_name)$(directory_name) $(git_dirty)$(need_push)\n$ '
-export PROMPT_EOL_MARK=""
-
-precmd() {
-  title "zsh" "%m" "%55<...<%~"
+gcp_prompt() {
+  echo "[%{$fg_bold[grey]%}k8s:$(kubectl config current-context)%{$reset_color%}]"
 }
+
+export PROMPT=$'\n$(host_name)$(directory_name) $(gcp_prompt)$(git_dirty)$(need_push)\n$ '
+export PROMPT_EOL_MARK=""
