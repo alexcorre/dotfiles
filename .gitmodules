@@ -4,3 +4,6 @@
 [submodule "rbenv/rbenv.symlink"]
 	path = rbenv/rbenv.symlink
 	url = git@github.com:sstephenson/rbenv.git
+[submodule "python/pyenv.symlink"]
+	path = python/pyenv.symlink
+	url = git@github.com:pyenv/pyenv.git
