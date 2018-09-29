@@ -1,0 +1,28 @@
+[user]
+	name = Alex Corre
+	email = alex@workpop.com
+[push]
+	default = simple
+[core]
+	excludesfile = /Users/alexcorre/.gitignore_global
+	editor = vim
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[alias]
+  st = status
+  ci = commit
+  br = branch
+  co = checkout
+  df = diff
+  lg = log -p
+  sync = pull --rebase
+[mergetool]
+	keepBackup = false
+[merge]
+	tool = opendiff
+[credential]
+	helper = osxkeychain
