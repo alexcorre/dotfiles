@@ -51,14 +51,14 @@ host_name () {
 	echo "%{$fg_bold[black]%}(%n@%m):%{$reset_color%}"
 }
 
-gcp_prompt() {
-  if $(which kubectl &> /dev/null)
-  then
-    echo "[%{$fg_bold[grey]%}k8s:$(kubectl config current-context)%{$reset_color%}]"
-	else
-	  echo ""
-  fi
-}
+# gcp_prompt() {
+#   if $(which kubectl &> /dev/null)
+#   then
+#     echo "[%{$fg_bold[grey]%}k8s:$(kubectl config current-context)%{$reset_color%}]"
+# 	else
+# 	  echo ""
+#   fi
+# }
 
-export PROMPT=$'\n$(host_name)$(directory_name) $(gcp_prompt)$(git_dirty)$(need_push)\n$ '
+export PROMPT=$'\n$(host_name)$(directory_name) $(git_dirty)$(need_push)\n$ '
 export PROMPT_EOL_MARK=""
