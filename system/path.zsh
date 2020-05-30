@@ -2,8 +2,6 @@
 # export PATH="/usr/local/bin:$HOME/Developer/devtools/utilities:$PATH"
 # export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
-export PATH="$PATH:$HOME/.meteor"
-
 # Add gcloud
-source $HOME/google-cloud-sdk/completion.zsh.inc
-source $HOME/google-cloud-sdk/path.zsh.inc
+# source $HOME/google-cloud-sdk/completion.zsh.inc
+# source $HOME/google-cloud-sdk/path.zsh.inc
