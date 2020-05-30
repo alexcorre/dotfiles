@@ -5,10 +5,6 @@ autoload colors && colors
 # See where git actually is and use that
 GIT=$(which git)
 
-git_branch() {
-  echo $($GIT symbolic-ref HEAD 2>/dev/null | awk -F/ {'print $NF'})
-}
-
 git_dirty() {
   st=$($GIT status --porcelain 2>/dev/null)
   if [[ $st == "" ]]
@@ -56,7 +52,12 @@ host_name () {
 }
 
 gcp_prompt() {
-  echo "[%{$fg_bold[grey]%}k8s:$(kubectl config current-context)%{$reset_color%}]"
+  if $(which kubectl &> /dev/null)
+  then
+    echo "[%{$fg_bold[grey]%}k8s:$(kubectl config current-context)%{$reset_color%}]"
+	else
+	  echo ""
+  fi
 }
 
 export PROMPT=$'\n$(host_name)$(directory_name) $(gcp_prompt)$(git_dirty)$(need_push)\n$ '
