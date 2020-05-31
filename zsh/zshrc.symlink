@@ -23,3 +23,7 @@ for config_file ($ZSH/*/completion.sh) source $config_file
 
 # added by travis gem
 [ -f /Users/alexcorre/.travis/travis.sh ] && source /Users/alexcorre/.travis/travis.sh
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/alexcorre/.sdkman"
+[[ -s "/Users/alexcorre/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/alexcorre/.sdkman/bin/sdkman-init.sh"
